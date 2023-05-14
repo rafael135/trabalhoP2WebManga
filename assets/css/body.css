@@ -1,0 +1,68 @@
+.ms-auto {
+    margin-left: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+p {
+
+}
+
+section#lancamentos {
+    height: 100vh;
+    width: 100%;
+    background-color: #16151D;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: hidden;
+}
+
+.lanc-figure {
+    float: right;
+    top: -350px;
+    right: -330px
+}
+.lanc-figure svg {
+    width: 1163px;
+    height: auto;
+}
+
+
+.lanc-manga {
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 5;
+}
+.lanc-manga .lanc-title, .lanc-manga .lanc-p {
+    color: #FFF;
+}
+.lanc-manga .lanc-title {
+    text-align: center;
+    font-size: 48px;
+}
+.lanc-manga .lanc-p {
+    font-size: 20px;
+}
