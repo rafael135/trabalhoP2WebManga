@@ -96,13 +96,26 @@ section#lancamentos {
     overflow-x: hidden;
 }
 
+section#maisLidos {
+    min-height: 80vh;
+    width: 100%;
+    background-color: #2A282B;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .lanc-figure {
     float: right;
-    top: -350px;
-    right: -330px
+    top: -24.5vw;
+    right: -23.28vw
 }
 .lanc-figure svg {
-    width: 1163px;
+    width: 85vw;
     height: auto;
 }
 
@@ -132,9 +145,107 @@ section#lancamentos {
     color: #FFF;
     text-decoration: none;
     border-radius: 8px;
-    padding: 12px 32px;
+    padding: 12px 40px;
+}
+.lanc-manga .btn:hover {
+    background-color: #5A2A8E;
+    box-shadow: 0 0 5px rgba(122, 63, 163, 0.6);
+
+    transition: all ease-in-out 200ms;
 }
 
 .lanc-manga--img img {
-    max-height: 700px;
+    max-height: 70vh;
+}
+
+
+.mangasMaisLidos {
+    width: 80%;
+    max-width: 80%;
+}
+
+.maisLidos-header {
+    background-color: #7A3FA3;
+    padding-left: 2rem;
+}
+
+.maisLidos-header h2 {
+    font-size: 36px;
+    background-color: rgba(22, 21, 29, 0.8);
+    color: #FFF;
+    font-weight: 600;
+    max-width: fit-content;
+    padding: 0 1.25rem;
+}
+
+.manga-cards {
+    background-color: #222222;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 3rem 2rem;
+}
+
+.manga-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+}
+.manga-card .manga-img-container {
+    position: relative;
+}
+.manga-card .manga-img-container .manga-type {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+.manga-card .manga-type.bg-blue {
+    background-color: #3B6CC8;
+}
+.manga-card .manga-type.bg-red {
+    background-color: #983425;
+}
+.manga-card .manga-type.bg-green {
+    background-color: #0f9385;
+}
+
+.manga-card .manga-img-container img {
+    height: 500px;
+    max-width: 300px;
+}
+.manga-card .manga-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+.manga-card .manga-chapter {
+    margin-top: 0.75rem;
+    color: #ABABAB;
+}
+.manga-card .manga-rate {
+
+}
+.manga-card .manga-rate .stars {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+    margin-top: 0.25rem;
+
+    justify-content: flex-start;
+}
+.manga-card .manga-rate .stars svg {
+    fill: #fCC101;
+    width: 24px;
+    height: 24px;
 }
