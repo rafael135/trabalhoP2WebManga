@@ -19,22 +19,24 @@
         <div class="card z-10">
             <div class="container">
                 <div class="form">
-                    <form action="#">
+                    <form id="formLogin" action="#">
                         <div class="form-header">
                             <div class="title">
                                 <h1>YOMU</h1>
                             </div>
                         </div>
                             <div class="input-box">
-                                <label for="email">E-mail</label>
-                                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                                <label for="emailLogin">E-mail</label>
+                                <input id="emailLogin" type="email" name="email" placeholder="Digite seu e-mail" data-reqs="required">
+                                <span id="error" class="error d-none"></span>
                             </div>
         
                             <div class="input-box">
-                                <label for="password">Senha</label>
-                                <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                                <label for="passwordLogin">Senha</label>
+                                <input id="passwordLogin" type="password" name="password" placeholder="Digite sua senha" data-reqs="required|min=8">
+                                <span id="error" class="error d-none"></span>
                             </div>
-                        <div class="continue-button">
+                        <div class="continue-button" onclick="formLogin.submit()">
                             <button><a href="#">Continuar</a> </button>
                         </div>
                     </form>
@@ -42,7 +44,7 @@
 
                 
                 <div class="form-cadastro">
-                    <form action="#">
+                    <form id="formCadastro" action="#">
                         <div class="form-header">
                             <div class="title">
                                 <h1>Cadastre-se</h1>
@@ -52,32 +54,38 @@
                         <div class="input-group">
                             <div class="input-box">
                                 <label for="firstname">Primeiro Nome</label>
-                                <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                                <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" data-reqs="required">
+                                <span id="error" class="error d-none"></span>
                             </div>
         
                             <div class="input-box">
                                 <label for="lastname">Sobrenome</label>
-                                <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                                <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" data-reqs="required">
+                                <span id="error" class="error d-none"></span>
                             </div>
                             <div class="input-box">
                                 <label for="email">E-mail</label>
-                                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" data-reqs="required">
+                                <span id="error" class="error d-none"></span>
                             </div>
         
                             <div class="input-box">
                                 <label for="number">Celular</label>
-                                <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                                <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" data-reqs="required|min=8">
+                                <span id="error" class="error d-none"></span>
                             </div>
         
                             <div class="input-box">
                                 <label for="password">Senha</label>
-                                <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                                <input id="password" type="password" name="password" placeholder="Digite sua senha" data-reqs="required|min=8">
+                                <span id="error" class="error d-none"></span>
                             </div>
         
         
                             <div class="input-box">
                                 <label for="confirmPassword">Confirme sua Senha</label>
-                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                                <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" data-reqs="required|min=8">
+                                <span id="error" class="error d-none"></span>
                             </div>
         
                         </div>
@@ -110,7 +118,7 @@
                             </div>
                         </div>
         
-                        <div class="continue-button">
+                        <div class="continue-button" onclick="formCadastro.submit()">
                             <button><a href="#">Cadastre-se</a> </button>
                         </div>
                     </form>
@@ -119,8 +127,6 @@
         </div>
     </div>
 
-
-
-    
+    <script src="assets/js/authChecker.js"></script>
 </body>
 </html>
