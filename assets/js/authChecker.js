@@ -1,8 +1,9 @@
 let formCadastro = document.getElementById("formCadastro");
 let formLogin = document.getElementById("formLogin");
 
-let action = "";
+let action = ""; // Indica qual ação está sendo feita no momento(register | login)
 
+// Remove o erro dos inputs
 function removeError(e) {
     let input = e.target;
     let inputError = input.parentNode.querySelector("span.error");
@@ -14,6 +15,7 @@ function removeError(e) {
     input.removeEventListener("focus", removeError);
 }
 
+// Exibe os erros nos inputs
 function showError(error) {
     let id = error.inputId;
 
@@ -28,6 +30,7 @@ function showError(error) {
     input.addEventListener("focus", removeError);
 }
 
+// Checa os inputs de cada formulario
 function checkInputs() {
     let form = (action == "register") ? "form#formCadastro" : "form#formLogin";
     let formInputs = document.querySelectorAll(`${form} input:not([type=radio])`);
@@ -40,7 +43,7 @@ function checkInputs() {
         reqs.forEach((req) => {
             let reqValue = req.split("=");
 
-            switch(req) {
+            switch(reqValue[0]) {
                 case "required":
                     if(input.value == "") {
                         errors.push({
