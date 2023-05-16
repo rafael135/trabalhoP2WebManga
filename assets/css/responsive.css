@@ -1,0 +1,27 @@
+@media(max-width: 1210px) {
+    section#lancamentos {
+        flex-direction: column;
+        padding: 6rem 0;
+    }
+
+    section#lancamentos div#lancText {
+        order: 1;
+    }
+
+    .lanc-manga .lanc-title {
+        margin-top: 2rem;
+    }
+    .lanc-manga .btn {
+        padding: 24px 80px;
+    }
+}
+
+@media(max-width: 991px) {
+    nav ul {
+        display: none;
+
+        /*
+            Falta criar o menu do celular
+        */
+    }
+}

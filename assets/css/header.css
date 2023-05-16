@@ -21,13 +21,19 @@ header {
 nav {
     height: 100%;
     display: flex;
+    align-items: center;
+
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
     flex-direction: row;
     align-items: center;
 
     gap: 24px;
-
-    padding-left: 64px;
-    padding-right: 64px;
 }
 
 .nav-item {
@@ -80,7 +86,7 @@ nav {
     font-size: 24px;
 }
 
-.nav-item.logo a {
+.logo a {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 36px;

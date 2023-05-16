@@ -71,7 +71,7 @@
         
                             <div class="input-box">
                                 <label for="number">Celular</label>
-                                <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" data-reqs="required">
+                                <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" data-reqs="required">
                                 <span id="error" class="error d-none"></span>
                             </div>
         
@@ -89,6 +89,17 @@
                             </div>
         
                         </div>
+
+                        <!-- Importo a biblioteca "iMask" para mascarar o campo de telefone -->
+                        <script src="https://unpkg.com/imask"></script>
+                        <script>
+                            IMask(
+                                document.getElementById("number"),
+                                {
+                                    mask: "(00) 00000-0000"
+                                }
+                            );
+                        </script>
         
                         <div class="group-genero">
                             <div class="title-genero">
