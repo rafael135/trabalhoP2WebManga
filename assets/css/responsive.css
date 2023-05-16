@@ -25,3 +25,52 @@
         */
     }
 }
+
+
+
+/*
+        Parte responsiva do login e cadastro
+*/
+
+@media screen and (max-width: 1440px){       /* max-width: 1330px */
+    #container1{
+        width: 80%;
+    }
+
+    #form-cadastro {
+        width: 100%;
+    }
+    #form-login {
+        width: 100%;
+    }
+    #title{
+        margin-top: 80px;
+    }
+    #gender-group{
+        display: inline-flex;
+    }
+}
+
+
+@media screen and (max-width: 1064px) {
+    #container {
+        width: 90%;
+        height: auto;
+    }
+    #input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+    #gender-inputs {
+        margin-top: 2rem;
+    }
+    #gender-group {
+        flex-direction: column;
+    }
+    #gender-input {
+        margin-top: 0.5rem;
+    }
+}

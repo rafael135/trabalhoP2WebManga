@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container-auth">
-        <div class="absolute background-color z-5">
 
+    <div class="container-auth">
+        <div class="absolute background-color z-5" >
         </div>
         <div class="card z-10">
-            <div class="container">
+            <div class="container" id="container">
                 <div class="form">
                     <form id="formLogin" action="#">
                         <div class="form-header">
@@ -43,15 +43,15 @@
                 </div>
 
                 
-                <div class="form-cadastro">
-                    <form id="formCadastro" action="#">
+                <div class="form-cadastro" id="form-cadastro">
+                    <form id="form-Cadastro" action="#">
                         <div class="form-header">
-                            <div class="title">
+                            <div class="title" id="title">
                                 <h1>Cadastre-se</h1>
                             </div>
                         </div>
                         
-                        <div class="input-group">
+                        <div class="input-group" id="input-group">
                             <div class="input-box">
                                 <label for="firstname">Primeiro Nome</label>
                                 <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" data-reqs="required">
@@ -103,26 +103,26 @@
         
                         <div class="group-genero">
                             <div class="title-genero">
-                                <h6>Género</h6>
+                                <h6>Genero</h6>
                             </div>
         
-                            <div class="gender-group">
+                            <div class="gender-group" id="gender-group">
                                 <div class="gender-input">
                                     <input id="female" type="radio" name="gender">
                                     <label for="female">Feminino</label>
                                 </div>
         
-                                <div class="gender-input">
+                                <div class="gender-input" id="gender-input">
                                     <input id="male" type="radio" name="gender">
                                     <label for="male">Masculino</label>
                                 </div>
         
-                                <div class="gender-input">
+                                <div class="gender-input" id="gender-input">
                                     <input id="others" type="radio" name="gender">
                                     <label for="others">Outros</label>
                                 </div>
         
-                                <div class="gender-input">
+                                <div class="gender-input" id="gender-input">
                                     <input id="none" type="radio" name="gender">
                                     <label for="none">Prefiro não dizer</label>
                                 </div>
