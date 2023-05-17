@@ -78,7 +78,9 @@
     margin-top: 2rem;
 }
 
-
+body{
+    background-color: #16151D;
+}
 
 h2 {
     margin-block-start: 0;
