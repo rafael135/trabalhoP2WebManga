@@ -90,6 +90,10 @@
     color: #fff;
 }
 
+.form-header h1 {
+    position: relative;
+}
+
 .form-header h1::after {
     content: '';
     display: block;
