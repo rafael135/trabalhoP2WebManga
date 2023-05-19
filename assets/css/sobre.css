@@ -36,7 +36,7 @@
         border-radius: 15px;
     }
 
-    h3{
+    .title-cont{
         align-items: center;
         justify-content: center;
         display: flex;

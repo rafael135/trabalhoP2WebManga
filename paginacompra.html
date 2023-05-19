@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yomu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <header class="nav-bar">
+            <nav>
+                <div class="logo">
+                    <a class="nav-link" href="index.html">Yomu</a>
+                </div>
+            </nav>
+        </header>
+        
+<div class="fundo">
+    <div class="imagem" >
+        <img src="assets/img/hirunaka.jpg" alt="">
+        <h3 id="livro">Hirunaka no Ryuusei </h3>
+    </div>
+
+    <div class="box-compra">
+        <div class="produto">
+            <section class="Produto">
+                <h3 id="nome">Resumo do Pedido</h3>
+                <p class="text-al"><em>Caso seu pedido tenha produtos que estão em pré-venda, o prazo de entrega começa a 
+                    contar a partir do recebimento do produto em estoque.</em>
+                </p>
+                <p class="coding">Inserir cupom</p>
+                <div class="box-cupom">
+                    <input id="cupom" type="text" name="cupom" placeholder="Inserir cupom" data-reqs="required">
+                    <span id="error" class="error d-none"></span>
+                </div>
+                <p class="coding">Calcular Frete</p>
+                <div class="box-frete">
+                    <input id="frete" type="text" name="frete" placeholder="Calcular Frete" data-reqs="required">
+                    <span id="error" class="error d-none"></span>
+                </div>
+                <div class="cep">
+                    <p><a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sei meu cep</a></p>
+                </div>
+                <p class="text-al">Desculpe, não há orçamentos disponíveis para este pedido no momento</em>
+                </p>
+
+                    <div class="sub-total">
+                        <p>Sub-total</p>
+                        <div class="sub-valor">
+                            <p>R$405,90</p>
+                    </div>
+
+                    <div class="taxa">
+                        <p>Taxa</p>
+                    <div class="sub-taxa">
+                        <p>R$0,00</p>
+                    </div>
+
+                    <div class="valor-total">
+                        <p>Valor Total</p>
+                    <div class="vl-total">
+                        <p><strong>R$405,90</strong></p>
+                    </div>
+                </div>
+            </section>
+            <div class="finalizar-button">
+                <button><a href="#">Finalizar Compra</a> </button>
+            </div>
+            <div class="continuar-button">
+                <button><a href="#">Continuar comprando</a> </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
