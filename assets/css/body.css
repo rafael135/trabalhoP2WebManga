@@ -17,6 +17,12 @@
 .relative {
     position: relative;
 }
+.z-20 {
+    z-index: 20;
+}
+.z-15 {
+    z-index: 15;
+}
 .z-10 {
     z-index: 10;
 }

@@ -1,75 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yomu</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yomu</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        <header class="nav-bar">
+        <!-- NAVBAR -->
+        <header>
             <nav>
                 <div class="logo">
                     <a class="nav-link" href="index.html">Yomu</a>
                 </div>
+                <ul class="ms-auto" id="ul-mobileMenu">
+                    <!-- FAVOR PRESTAR ATENÇÃO AO EDITAR TAGS COM IDS! -->
+                    <li class="nav-item hover-line">
+                        <a class="nav-link" href="">Destaque</a>
+                    </li>
+
+                    <li class="nav-item hover-line">
+                        <a class="nav-link" href="">Lançamentos</a>
+                    </li>
+
+                    <li class="nav-item hover-line">
+                        <a class="nav-link" href="">Mangás mais lidos</a>
+                    </li>
+                    <li class="nav-item hover-line">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-header" href="login.html"
+                            >Login</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
             </nav>
         </header>
-    <div class="absolute background-color z-5">
-        <div class="container-geral">
-        <div class="box">
-                 <h2 class="lanc-title">Sobre nós!</h2>
+        <!-- ---------------------------------------------------------- -->
 
-                <p class="lanc-p mt-7 mb-6 ">Afim de querer beneficiar aqueles otakus leitores assíduos e amantes de uma boa leitura asiatica, a YOMO trás uma extensa gama de 
-                    leituras de todos os gêneros, de Shounen à Yaois e, com uma lista atualizada e completas. Trabalhamos há mais de oito anos neste ramo e a nossa felicidade é saber 
-                    que você sempre ache a leitura perfeita e da melhor forma possível! </p>
-        
+        <div class="absolute background-color z-5">
+            <div class="container-geral">
+                <div class="box">
+                    <h2 class="lanc-title">Sobre nós!</h2>
 
-                <form action="">
+                    <p class="lanc-p mt-4 mb-4">
+                        Afim de querer beneficiar aqueles otakus leitores
+                        assíduos e amantes de uma boa leitura asiatica, a YOMO
+                        trás uma extensa gama de leituras de todos os gêneros,
+                        de Shounen à Yaois e, com uma lista atualizada e
+                        completas. Trabalhamos há mais de oito anos neste ramo e
+                        a nossa felicidade é saber que você sempre ache a
+                        leitura perfeita e da melhor forma possível!
+                    </p>
+
+                    <form action="">
                         <!-- <legend><b>Sobre</b></legend> 
                         Para ficar no meio da linha do formulario
                         -->
                         <h3 class="title-cont">Entre em contato</h3>
 
                         <div class="input-box2">
-                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome" data-reqs="required">
+                            <input
+                                id="firstname"
+                                type="text"
+                                name="firstname"
+                                placeholder="Digite seu nome"
+                                data-reqs="required"
+                            />
                             <span id="error" class="error d-none"></span>
                         </div>
                         <div class="input-box2">
-                            <input id="emailLogin" type="email" name="email" placeholder="Digite seu e-mail" data-reqs="required">
+                            <input
+                                id="emailLogin"
+                                type="email"
+                                name="email"
+                                placeholder="Digite seu e-mail"
+                                data-reqs="required"
+                            />
                             <span id="error" class="error d-none"></span>
                         </div>
                         <div class="input-box2">
-                            <label for="number">Digite o Numero de Celular</label>
-                            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" data-reqs="required">
+                            <label for="number"
+                                >Digite o Numero de Celular</label
+                            >
+                            <input
+                                id="number"
+                                type="tel"
+                                name="number"
+                                placeholder="(xx) xxxxx-xxxx"
+                                data-reqs="required"
+                            />
                             <span id="error" class="error d-none"></span>
                         </div>
-                </form>
+                    </form>
 
-                <div class="input-box2">
-                <label for="Assunto"> Assunto:</label> 
-                    <select>
-                        <option value="i" class="texto-center">Publicidade</option>
-                        <option value="a">Patrocínio</option>
-                        <option value="f">Reclamações</option>
-                        <option value="f">Feedback</option>
-                        <option value="f">Trabalhe Conosco</option>
-                    </select>
+                    <!-- Importo a biblioteca "iMask" para mascarar o campo de telefone -->
+                    <script src="https://unpkg.com/imask"></script>
+                    <script>
+                        IMask(
+                            document.getElementById("number"),
+                            {
+                                mask: "(00) 00000-0000"
+                            }
+                        );
+                    </script>
+
+                    <div class="input-box2">
+                        <label for="Assunto"> Assunto:</label>
+                        <select>
+                            <option value="i" class="texto-center">
+                                Publicidade
+                            </option>
+                            <option value="a">Patrocínio</option>
+                            <option value="f">Reclamações</option>
+                            <option value="f">Feedback</option>
+                            <option value="f">Trabalhe Conosco</option>
+                        </select>
                     </div>
                     <div class="input-box2">
-                    <label for="Mensagem:">Mensagem:</label>
+                        <label for="Mensagem:">Mensagem:</label>
                         <textarea name="" id="" cols="80" rows="8"></textarea>
                     </div>
-                        <div class="enviar-button">
-                            <button><a href="#">Enviar</a></button>
-                        </div>
+                    <div class="enviar-button">
+                        <button><a href="#">Enviar</a></button>
+                    </div>
                 </div>
             </div>
         </div>
-</body>
+
+        <script src="assets/js/navbar.js"></script>
+    </body>
 </html>

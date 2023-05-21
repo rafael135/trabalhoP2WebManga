@@ -13,13 +13,41 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-        <header class="nav-bar">
-            <nav>
-                <div class="logo">
-                    <a class="nav-link" href="index.html">Yomu</a>
-                </div>
-            </nav>
-        </header>
+        <!-- NAVBAR -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a class="nav-link" href="index.html">Yomu</a>
+            </div>
+            <ul class="ms-auto" id="ul-mobileMenu">
+                <!-- FAVOR PRESTAR ATENÇÃO AO EDITAR TAGS COM IDS! -->
+                <li class="nav-item hover-line">
+                    <a class="nav-link" href="">Destaque</a>
+                </li>
+
+                <li class="nav-item hover-line">
+                    <a class="nav-link" href="">Lançamentos</a>
+                </li>
+
+                <li class="nav-item hover-line">
+                    <a class="nav-link" href="">Mangás mais lidos</a>
+                </li>
+                <li class="nav-item hover-line">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-header" href="login.html">Login</a>
+                </li>
+            </ul>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- ---------------------------------------------------------- -->
         
 <div class="fundo">
     <div class="imagem" >
@@ -79,5 +107,7 @@
     </div>
 </div>
 
+
+<script src="assets/js/navbar.js"></script>
 </body>
 </html>

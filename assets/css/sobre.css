@@ -12,42 +12,48 @@
 }
 
 
-    .container-geral {
+.container-geral {
     width: 100vw;
     height: 100vh;
     background: #16151D;
     display: flex;
+    padding-top: 5rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    }
+}
     
-    .box {
-        position: absolute;
-        width: 60%;
-        height: 87%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #1c1c1c;
-        color: white;
-        padding: 3rem;
-        border-radius: 15px;
-    }
+.box {
+    position: relative;
+    width: 60%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+}
 
-    .title-cont{
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        text-align: center;
-    }
+.title-cont{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
 
 .input-box2 {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+}
+.input-box2 textarea {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .input-box2 input {

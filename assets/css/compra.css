@@ -68,9 +68,11 @@
 .text-al{
     text-align:unset;
     text-decoration: none;
+    word-break: break-all;
     font-size: 14px;
     margin-left: 20px ;
     margin-right: 20px ;
+    max-width: 100%;
 }
 
 .coding{
