@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #16151D;
+}
+
+.fundo-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #16151D;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fundo-box ul{
+    margin-top: 60% ;
+}
+
+.tabela{
+    list-style-type: none;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+
+
+.tabela img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    display:inline-block;
+    border:2px solid rgb(204, 0, 255);
+    margin: 4px;
+}
