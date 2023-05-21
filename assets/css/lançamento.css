@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*
+
+            deixa lado a lado
+
+*/
+
+.box-total{
+    display: flex;    
+}
+
+
+/*
+
+            tablea da esquerda
+
+*/
+
+.Raking-geral{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.box-ranking{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #16151D;
+}
+
+.ranking{
+    margin-top: 150px;
+    margin-left: 120px ;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 30px #7A3FA3;
+}
+
+.rank{
+    background-color: #1c1c1c;
+    border-radius: 15px;
+}
+
+.ranking h3{
+    margin-left: 40%;
+}
+
+/*
+
+            tablea da direita
+
+*/
+
+.box-rankingUS{
+    width: 100%;
+    height: 100vh;
+    background-color: #16151D;
+    display: flex;
+}
+
+.rankingUS{
+    margin-top: 150px;
+    margin-left: 120px ;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 30px #7A3FA3;
+}
+
+.rankUS{
+    background-color: #1c1c1c;
+    border-radius: 15px;
+}
+
+.rankingUS h3{
+    margin-left: 40%;
+}
