@@ -138,3 +138,100 @@
         overflow-y: scroll;
         }
 }
+
+
+/* 
+    Tela de compra
+*/
+
+@media screen and (max-width: 1330px ){
+    .box-compra{
+        overflow-y: auto;
+    }
+    .box-compra{
+        width: 35%;
+        height: auto;
+        flex-direction: column;
+    }
+    .imagem{
+        width: 30%;
+        margin-top: 10%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1589px ){
+    .box-compra{
+        overflow-y: auto;
+    }
+    .box-compra{
+        width: 35%;
+        height: auto;
+        flex-direction: column;
+    }
+    .imagem{
+        width: 30%;
+        margin-top: 8%;
+        flex-direction: column;
+    }
+    .vl-total{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1091px){
+    .box-compra{
+        overflow-y: auto;
+    }
+    .box-compra{
+        width: 40%;
+        height: auto;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .imagem{
+        width: 30%;
+        margin-top: 10%;
+        flex-direction: column;
+    }
+}
+
+
+/* 
+    Tela de Catalogo
+*/
+
+
+@media screen and (max-width: 1589px ){
+    .lista{
+        margin-top:10%;
+    }
+}
+
+@media screen and (max-width: 1091px){
+    .lista{
+        margin-top:10%;
+    }
+}
+
+/* 
+    Tela de sobre
+*/
+
+@media screen and (max-width: 1589px){
+    .container-geral{
+        margin-top:5%;
+    }
+}
+
+@media screen and (max-width: 1330px ){
+    .box{
+        margin-top:15%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .box{
+        margin-top:10%;
+    }
+}
