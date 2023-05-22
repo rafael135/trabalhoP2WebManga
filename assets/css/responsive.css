@@ -116,6 +116,29 @@
     }
 }
 
+@media screen and (max-width: 1178px) {
+    .container-auth {
+        overflow-y: auto;
+    }
+    #container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 50%;
+    }
+    .form-cadastro {
+        box-shadow: inset top 0.2em 0 0.7em #7A3FA3;
+    }
+    .form-cadastro, .form {
+        width: 100%;
+    }
+
+    #input-group {
+
+        overflow-y: scroll;
+        }
+}
+
 
 @media screen and (max-width: 1091px) {
     .container-auth {
@@ -139,6 +162,31 @@
         overflow-y: scroll;
         }
 }
+
+@media screen and (max-width: 869px) {
+    .container-auth {
+        overflow-y: auto;
+    }
+    #container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 80%;
+    }
+    .form-cadastro {
+        box-shadow: inset top 0.2em 0 0.7em #7A3FA3;
+    }
+    .form-cadastro, .form {
+        width: 100%;
+    }
+
+    #input-group {
+
+        overflow-y: scroll;
+        }
+}
+
+
 
 
 /* 
