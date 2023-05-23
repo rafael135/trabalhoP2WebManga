@@ -1,10 +1,3 @@
-*{                                  /* Parte da barra de menus */
-    /* margin: 0; */
-    /* padding: 0; */
-    box-sizing: border-box;
-    /* font-family: 'Roboto', sans-serif; */
-}
-
 .container-auth {
     width: 100%;
     height: 100vh;
@@ -13,8 +6,7 @@
     align-items: center;
     background-image: url("../img/fundo.png");
     background-repeat: no-repeat;
-    background-size:cover;    
-    overflow: hidden;
+    background-size:cover;
     position: relative;
 }
 
