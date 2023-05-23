@@ -9,27 +9,75 @@ body{
 
 .fundo-box{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     background-color: #16151D;
     color: white;
     font-size: 30px;
     text-align: center;
     justify-content: center;
-    align-items: center;
-}
+    align-items: flex-start;
 
-
-.fundo-box ul{
-    margin-top: 70% ;
+    padding-bottom: 2rem;
 }
 
 .tabela{
+    background-color: #2A282B;
     list-style-type: none;
-    margin-left: auto;
-    margin-top: 20%;
+    margin-left: 0;
+    margin-top: 100px;
+    padding-bottom: 1rem;
+    
 }
 
+.tabela .catalogo-title {
+    background-color: #221f22;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.tabela .catalogo-categoria {
+    
+}
+.tabela .catalogo-categoria .categoria-title {
+    
+}
+.tabela .catalogo-separador {
+    content: "";
+    width: 90%;
+    height: 2px;
+    display: flex;
+    background-color: #BBB;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabela .catalogo-categoria .categoria-mangas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.tabela .catalogo-categoria .categoria-mangas .manga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categoria-mangas .manga img {
+    width: auto;
+    height: 300px;
+    max-height: 300px;
+}
+.categoria-mangas .manga img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all ease-in-out 200ms;
+}
 
 
 .tabela img{

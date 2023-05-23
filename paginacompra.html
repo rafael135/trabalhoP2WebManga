@@ -72,6 +72,16 @@
                     <input id="frete" type="text" name="frete" placeholder="Calcular Frete" data-reqs="required">
                     <span id="error" class="error d-none"></span>
                 </div>
+
+                <script src="https://unpkg.com/imask"></script>
+                <script>
+                IMask(
+                    document.getElementById("frete"),
+                    {
+                        mask: "00000-000"
+                    }
+                );
+                </script>
                 <div class="cep">
                     <p><a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sei meu cep</a></p>
                 </div>
@@ -109,7 +119,13 @@
     </div>
 </div>
 
+    <footer>
+        <div class="footer-container">
+            <a class="logo" href="">Yomu</a>
+        </div>
+        <div class="footer-text">© Copyright 2023 <a>Yomu</a></div>
+    </footer>
 
-<script src="assets/js/navbar.js"></script>
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>

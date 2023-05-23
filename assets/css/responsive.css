@@ -253,13 +253,13 @@
 
 @media screen and (max-width: 1589px ){
     .lista{
-        margin-top:10%;
+        margin-top: 0;
     }
 }
 
 @media screen and (max-width: 1091px){
     .lista{
-        margin-top:10%;
+        margin-top:0;
     }
 }
 
