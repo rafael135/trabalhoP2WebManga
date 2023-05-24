@@ -1,3 +1,4 @@
+/* Secao mais lidos */
 @media(max-width: 1210px) {
     section#lancamentos {
         flex-direction: column;
@@ -15,25 +16,38 @@
         padding: 24px 80px;
     }
 }
+/* //////////////////////////// */
 
+
+/* Navbar */
 @media(max-width: 1091px) {
+    nav {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
     nav ul {
         margin: 0;
-        display: none;
+        display: flex;
         flex-direction: column;
         margin-left: 0;
         position: absolute;
-        top: 80px;
         gap: 0;
+        top: 80px;
+        width: 100vw;
         height: calc(100vh - 80px);
-        left: 0;
-        right: 0;
-        bottom: 0;
+        left: -100vw;
         border-top: 1px solid #7A3FA3;
         background-color: rgba(0, 0, 0, 0.6);
+        transition: all ease-in-out 200ms;
+    }
+    nav ul.showing {
+        display: flex;
+
     }
     nav ul.show {
         display: flex;
+        left: 0vw;
+        transition: all ease-in-out 200ms;
     }
     .nav-item {
         width: 100%;
@@ -67,13 +81,10 @@
         text-align: center;
         margin-top: auto;
     }
-
     .hover-line:hover {
         transform: scale(1);
-    
         transition: all ease-in-out 400ms;
     }
-    
     .hover-line::after {
         transition: all ease-in-out 400ms;
     }
@@ -82,11 +93,19 @@
         background-color: #5A2A8E;
         transition: all ease-in-out 400ms;
     }
-
     nav .mobile-menu {
         display: flex;
     }
 }
+/* /////////////////////////////////////////////////////// */
+
+/* Título seção inicial */
+@media(max-width: 656px) {
+    .lanc-manga .lanc-title {
+        font-size: 40px;
+    }
+}
+/* //////////////////////////////////////// */
 
 
 /*
@@ -137,9 +156,6 @@
 
 
 @media screen and (max-width: 1091px) {
-    .container-auth {
-        
-    }
     #container {
         width: 90%;
         height: auto;
@@ -160,9 +176,6 @@
 }
 
 @media screen and (max-width: 971px) {
-    .container-auth {
-        
-    }
     #container {
         width: 90%;
         height: auto;

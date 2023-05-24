@@ -23,9 +23,6 @@ section#lancamentos .div-header {
     margin-bottom: 1rem;
 }
 
-section#lancamentos #capitulos {
-    
-}
 /* Container onde os mangas vao ser exibidos */
 section#lancamentos #capitulos .mangas {
     display: flex;
@@ -116,9 +113,6 @@ section#lancamentos #capitulos .mangas .manga .manga-info .manga-author {
 
 /* Metade dos ultimos mangas:                                                                            */
 
-section#lancamentos #mangas {
-
-}
 /* Container onde os mangas vao ser exibidos */
 section#lancamentos #mangas .mangas {
     display: flex;
