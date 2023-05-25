@@ -211,6 +211,11 @@ section#maisLidos {
     min-width: 300px;
     max-width: 300px;
 }
+.manga-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all ease-in-out 200ms;
+}
 .manga-card .manga-img-container {
     position: relative;
 }
