@@ -9,4 +9,5 @@
   <li>Nome: Giovanni Micheletti  RA: 112901</li>
   <li>Nome: Rafael Trova Rossi   RA: 113536</li>
   <li>Nome: Victor Brito         RA: 113438</li>
+  <li>Nome: Júlia Magalhaes      RA: 113374</li>
 </ul>
